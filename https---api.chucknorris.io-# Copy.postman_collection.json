@@ -26,15 +26,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.chucknorris.io/jokes/random",
-					"protocol": "https",
+					"raw": "{{baseURL}}/random",
 					"host": [
-						"api",
-						"chucknorris",
-						"io"
+						"{{baseURL}}"
 					],
 					"path": [
-						"jokes",
 						"random"
 					]
 				}
@@ -61,21 +57,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.chucknorris.io/jokes/random?category=money",
-					"protocol": "https",
+					"raw": "{{baseURL}}/random?category={{category}}",
 					"host": [
-						"api",
-						"chucknorris",
-						"io"
+						"{{baseURL}}"
 					],
 					"path": [
-						"jokes",
 						"random"
 					],
 					"query": [
 						{
 							"key": "category",
-							"value": "money"
+							"value": "{{category}}"
 						}
 					]
 				}
@@ -106,15 +98,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.chucknorris.io/jokes/categories",
-					"protocol": "https",
+					"raw": "{{baseURL}}/categories",
 					"host": [
-						"api",
-						"chucknorris",
-						"io"
+						"{{baseURL}}"
 					],
 					"path": [
-						"jokes",
 						"categories"
 					]
 				}
